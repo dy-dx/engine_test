@@ -1,0 +1,7 @@
+language: cpp
+os: osx
+script:
+  - clang++ -v
+  - cd src && ./externals.sh
+  - ./gmake.sh
+  - cd build && make
